@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Addiction - Addiction Awareness Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f8ff; /* Lighter background for contrast */
+            color: #2e2e2e;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: #1b1b1b;
+            color: #f8f9fa;
+        }
+        .dark-mode a {
+            color: #00cfff; /* Link color in dark mode */
+        }
+        .navbar {
+            background-color: #007bff; /* Bright blue navbar */
+        }
+        .navbar a {
+            color: white;
+        }
+        .navbar a:hover {
+            color: #ffdd57; /* Yellow on hover */
+        }
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+            background-color: #e9ecef; /* Light background on hover */
+        }
+        footer {
+            background-color: #007bff; /* Bright blue footer */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .dark-mode footer {
+            background-color: #212529; /* Darker footer background */
+        }
+        #manageAddiction {
+            margin-top: 20px;
+            padding: 20px;
+            background: #ffdd57; /* Yellow background for contrast */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #manageAddiction h2 {
+            color: #2e2e2e; /* Dark title color */
+        }
+        #manageAddiction ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #manageAddiction li {
+            background-color: #007bff; /* Blue button for tips */
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        #manageAddiction li:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="1-index.html">Addiction Awareness Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="2-gaming-addiction.html">Gaming Addiction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="3-alcohol-addiction.html">Alcohol Addiction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="4-drug-addiction.html">Drug Addiction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="5-song-for-your-life.html">Song for Your Life</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-secondary" id="toggleDarkMode">Toggle Dark Mode</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Manage Addiction Section -->
+<div class="container my-4">
+    <h1 class="text-center mb-4">Manage Your Addiction</h1>
+    <div id="manageAddiction">
+        <h2>Tips for Managing Addiction</h2>
+        <ul>
+            <li>Seek professional help.</li>
+            <li>Join support groups.</li>
+            <li>Practice mindfulness.</li>
+            <li>Set achievable recovery goals.</li>
+            <li>Distract yourself.</li>
+            <li>Interact more with other people.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Addiction Awareness Blog. All Rights Reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('toggleDarkMode').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+</body>
+</html>

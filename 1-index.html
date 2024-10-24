@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addiction Awareness Blog</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f8ff;
+            color: #2e2e2e;
+            transition: background-color 0.3s, color 0.3s;
+            line-height: 1.6;
+        }
+        .dark-mode {
+            background-color: #1b1b1b;
+            color: #f8f9fa;
+        }
+        .dark-mode a {
+            color: #00cfff;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar a {
+            color: white;
+        }
+        .navbar a:hover {
+            color: #ffdd57;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        h1, h2 {
+            margin-bottom: 30px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-title {
+            color: #007bff;
+            font-weight: 700;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .dark-mode footer {
+            background-color: #212529;
+        }
+        .section-padding {
+            padding: 40px 0;
+        }
+        .section-margin {
+            margin-bottom: 40px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a.btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        a.btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        #manageAddiction {
+            background: #ffdd57;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #manageAddiction h2 {
+            color: #2e2e2e;
+        }
+        #manageAddiction li {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section input,
+        .contact-section textarea {
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ced4da;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Addiction Awareness Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
+            <li class="nav-item">
+                <button class="btn btn-secondary" id="toggleDarkMode">Toggle Dark Mode</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Blog Section -->
+<div class="container section-padding">
+    <h1>Addiction Awareness Blog</h1>
+    <div class="row text-center">
+        <!-- Cards -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="gaming.jpg" class="card-img-top" alt="Gaming Addiction">
+                <div class="card-body">
+                    <h5 class="card-title">Gaming Addiction</h5>
+                    <p class="card-text">Impact of excessive gaming on mental health.</p>
+                    <a href="2-gaming-addiction.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="alcohol.jpg" class="card-img-top" alt="Alcohol Addiction">
+                <div class="card-body">
+                    <h5 class="card-title">Alcohol Addiction</h5>
+                    <p class="card-text">Effects of alcohol dependency and recovery.</p>
+                    <a href="3-alcohol-addiction.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="drugs.jpg" class="card-img-top" alt="Drug Addiction">
+                <div class="card-body">
+                    <h5 class="card-title">Drug Addiction</h5>
+                    <p class="card-text">Understanding drug addiction complexities.</p>
+                    <a href="4-drug-addiction.html" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mt-4">
+            <div class="card">
+                <img src="song.jpg" class="card-img-top" alt="Song for Your Life">
+                <div class="card-body">
+                    <h5 class="card-title">Song for Your Life</h5>
+                    <p class="card-text">A song that inspires hope and resilience.</p>
+                    <a href="5-song-for-your-life.html" class="btn btn-primary">Listen Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to Manage Your Addiction Section -->
+    <h2 id="manageAddiction" class="section-margin">How to Manage Your Addiction</h2>
+    <div class="card shadow-sm text-center">
+        <div class="card-body">
+            <h5 class="card-title">Tips for Managing Addiction</h5>
+            <ul>
+                <li>How to Manage Addiction</li>
+            </ul>
+            <a href="6-manage-addiction.html" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Resources Section -->
+    <h2 id="resources" class="section-margin">Resources</h2>
+    <ul>
+        <li><a href="https://www.nhs.uk/live-well/healthy-body/drug-addiction/">NHS: Drug Addiction</a></li>
+        <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK384632/">NIH: Substance Use Disorders</a></li>
+        <li><a href="https://www.rehabcenter.net/">Rehab Center: Help with Addiction</a></li>
+    </ul>
+
+    <!-- Testimonials Section -->
+    <h2 id="testimonials" class="section-margin">Share Your Story</h2>
+    <div class="testimonial text-center">
+        <p>"Your journey matters. Share your story and inspire others to find hope and strength in their recovery."</p>
+    </div>
+    <div class="testimonial text-center">
+        <p>"Want to share your experience? <a href="7-contact.html" class="btn btn-primary">share your experience?</a> to have your story featured!"</p>
+    </div>
+
+    <!-- FAQ Section -->
+    <h2 id="faq" class="section-margin">FAQ</h2>
+    <p><strong>Q:</strong> How can I support a loved one with addiction?</p>
+    <p><strong>A:</strong> Listen to them without judgment, encourage them to seek help, and offer your support.</p>
+
+    <!-- Contact Us Section -->
+    <h2 id ="contactus" class="section-margin">Contact Us</h2>
+    <div class="contact-section">
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Addiction Awareness Blog | All Rights Reserved</p>
+</footer>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "YOUR_API_KEY",
+        authDomain: "addictionmad.firebaseapp.com",
+        projectId: "addictionmad",
+        storageBucket: "addictionmad.appspot.com",
+        messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+        appId: "YOUR_APP_ID",
+    };
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    // Handle form submission
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        try {
+            await db.collection('contactUs').add({
+                name: name,
+                email: email,
+                message: message,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            });
+            alert('Your message has been sent successfully!');
+            contactForm.reset(); // Reset form fields
+        } catch (error) {
+            alert('Error sending message: ' + error.message);
+        }
+    });
+
+    // Toggle dark mode functionality
+    const toggleDarkModeBtn = document.getElementById('toggleDarkMode');
+    toggleDarkModeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
