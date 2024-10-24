@@ -1,0 +1,25 @@
+name: Deploy to Firebase
+
+on:
+  push:
+    branches:
+      - master  # Use master as your default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # You can specify a different Node.js version if needed
+
+      - name: Install Firebase CLI
+        run: npm install -g firebase-tools
+        
+      - name: Deploy to Firebase
+        run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
